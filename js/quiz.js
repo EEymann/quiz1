@@ -7,9 +7,13 @@ const questions = [
   ['What year was JavaScript created?', '1995']
 ];
 
-// 2. Store the number of questions answered correctly
-
+// 2. Store the number of questions answered correctly and incorrectly
+// Create two empty arrays. One to hold correct answers. The other to store incorrect answers.
+const correct = [];
+const incorrect= [];
 let correctAnswers = 0;
+
+
 
 /*
   3. Use a loop to cycle through each question
