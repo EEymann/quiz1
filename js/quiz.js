@@ -10,7 +10,7 @@ const questions = [
 // 2. Store the number of questions answered correctly and incorrectly
 // Create two empty arrays. One to hold correct answers. The other to store incorrect answers.
 const correct = [];
-const incorrect= [];
+const incorrect = [];
 let correctAnswers = 0;
 
 
@@ -30,6 +30,7 @@ for (let i = 0; i < questions.length; i++) {
 
   if (response === answer) {
     correctAnswers++;
+    correct.push(question); //Use the push method to add the correct answer to the correct array.
   }
 }
 
