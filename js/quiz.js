@@ -9,6 +9,7 @@ const questions = [
 
 // 2. Store the number of questions answered correctly
 
+let answers = 0;
 
 /*
   3. Use a loop to cycle through each question
