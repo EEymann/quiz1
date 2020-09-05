@@ -36,6 +36,17 @@ for (let i = 0; i < questions.length; i++) {
   }
 }
 
+// Display the values inside the correct and incorrect arrays in HTML ordered lists.
+
+function createListItems(arr) {
+  let items = '';
+  for (let i = 0; i < arr.length; i++) {
+    items += `<li>${arr[i]}</li>`;
+  }
+  return items;
+}
+
+
 
 // 4. Display the number of correct answers to the user
 
