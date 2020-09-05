@@ -36,7 +36,7 @@ for (let i = 0; i < questions.length; i++) {
   }
 }
 
-// Display the values inside the correct and incorrect arrays in HTML ordered lists.
+// Add a function to display the values inside the correct and incorrect arrays in HTML ordered lists.
 
 function createListItems(arr) {
   let items = '';
@@ -49,7 +49,17 @@ function createListItems(arr) {
 
 
 // 4. Display the number of correct answers to the user
+// Display which questions the user got correct, and which ones the user got wrong.
 
-let html = `<h1>You got ${correctAnswers} question(s) correct!</h1>`
+let html = `
+<h1>You got ${correctAnswers} question(s) correct.</h1>
+<h2>You got these questions right:</h2>
+<ol>${ createListItems(correct)}</ol>
+
+<h2>You these question(s) wrong:</h2>
+<ol>${createListItems(incorrect)}</ol>
+
+
+`;
 
 document.querySelector('main').innerHTML = html;
