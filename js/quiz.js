@@ -56,7 +56,7 @@ let html = `
 <h2>You got these questions right:</h2>
 <ol>${ createListItems(correct)}</ol>
 
-<h2>You these question(s) wrong:</h2>
+<h2>You got these question(s) wrong:</h2>
 <ol>${createListItems(incorrect)}</ol>
 
 
