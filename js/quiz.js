@@ -30,7 +30,7 @@ for (let i = 0; i < questions.length; i++) {
 
   if (response === answer) {
     correctAnswers++;
-    correct.push(question); //Push the correct answer to the correct array.
+    correct.push(question); //Push the question of the correct answer to the correct array.
   } else {
     incorrect.push(question); //Push the question of the incorrect answer to the incorrect array.
   }
