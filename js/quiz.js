@@ -9,7 +9,7 @@ const questions = [
 
 // 2. Store the number of questions answered correctly
 
-let answers = 0;
+let correctAnswers = 0;
 
 /*
   3. Use a loop to cycle through each question
@@ -18,6 +18,16 @@ let answers = 0;
       - If the response matches the answer, the number of correctly
         answered questions increments by 1
 */
+
+for (let i = 0; i < questions.length; i++) {
+  let question = questions[i][0];
+  let answer = questions[i][1];
+  let response = prompt(question);
+
+  if (response === answer) {
+    correctAnswers++;
+  }
+}
 
 
 // 4. Display the number of correct answers to the user
